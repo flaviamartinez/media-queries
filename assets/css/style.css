@@ -147,6 +147,7 @@ article button {
 	flex-grow: 1;
 	/* border: 1px solid salmon; */
 	margin-bottom: 0.5rem;
+	font-size: 2vh;
 }
 
 article button:hover {
@@ -165,7 +166,7 @@ article button:hover {
     text-decoration: none;
     color: black;
     border: 1px solid white;
-	border-left: none; 
+	border-left: none;
 }
 
 .pagination li:first-child a {
@@ -225,8 +226,8 @@ footer {
 		"nav nav "
 		"sorting main"
 		"footer footer";
-		grid-template-columns: 0.5fr 10fr;
-		grid-template-rows: 1fr 7fr 1fr;
+		grid-template-columns: 20% 80%;
+		grid-template-rows: 2fr 70% 1fr;
 	}
 	
 	nav {
@@ -246,6 +247,41 @@ footer {
 	
 	.hamburger {
 		display: none;
+	}
+
+	.sorting {
+		justify-content: start;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.product-container {
+		display: grid;
+		overflow-y: auto;
+		grid-template-columns: 1fr 1fr;
+		height: 55vh;
+		width: 100%;
+		justify-items: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	select {
+		border: none;
+		border-radius: 5px;
+		width: 80%;
+	}
+
+	article {
+		height: 95%;
+	}
+
+	main {
+		padding: 1rem;
+	}
+
+	article button {
+		margin: 0.5rem;
 	}
 }
 
