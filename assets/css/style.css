@@ -226,7 +226,7 @@ footer {
 		"nav nav "
 		"sorting main"
 		"footer footer";
-		grid-template-columns: 20% 80%;
+		grid-template-columns: 30% 70%;
 		grid-template-rows: 2fr 70% 1fr;
 	}
 	
@@ -291,18 +291,21 @@ footer {
 		"nav sorting "
 		"nav main"
 		"footer main";
-		grid-template-columns: 0.5fr 10fr;
-		grid-template-rows: 3fr 3fr 1fr;
+		grid-template-columns: 15% auto;
+		grid-template-rows: 10% auto 10%;
 	}
+
 	nav {
 		grid-area: nav;
 		background-color: #fff;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: start;
 		align-items: center;
 		color: #ce9288;
 		padding: 2rem;
+		gap: 1.5rem;
+		text-align: center;
 	}
 
 	.nav-links {
@@ -313,5 +316,23 @@ footer {
   
 	.hamburger {
 	  display: none;
+	}
+
+	.product-container {
+		display: grid;
+		overflow-y: auto;
+		grid-template-columns: repeat(4,1fr);
+		height: 75vh;
+		width: 100%;
+		justify-items: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	footer{
+		flex-direction: column;
+		gap: 0.3rem;
+		padding: 1rem;
+		justify-content: center;
 	}
 }
