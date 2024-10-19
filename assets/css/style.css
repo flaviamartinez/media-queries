@@ -8,9 +8,9 @@
 
 .grid-container{
 	display: grid;
-	min-height: 100vh;
+	height: 100vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto 1fr auto;
+	grid-template-rows: 1.5fr 1fr 65% 1fr;
 	grid-template-areas:
 		"nav"
 		"sorting"
@@ -63,22 +63,21 @@ select {
 main {
 	grid-area: main;
 	background-color: #eddcd9;
-	padding: 1rem;
-	/* border: 2px solid blue; */
 	display: flex;
 	flex-direction: column;
+	max-height: 100%;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .product-container {
 	display: grid;
-	gap: 1.5rem;
 	overflow-y: auto;
 	grid-template-columns: 1fr;
-	height: 450px;
-	/* border: 2px solid green; */
+	height: 55vh;
 	width: 80%;
+	justify-items: center;
+	align-items: center;
 }
 
 article {
@@ -86,10 +85,11 @@ article {
 	flex-direction: column;
 	background-color: #ffff;
 	align-items: center;
-	height: 25rem;
+	height: 90%;
+	width: auto;
 	/* border: 2px solid yellow; */
 	border-radius: 10px;
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 
 article h3 {
@@ -108,12 +108,14 @@ article p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0.5rem;
 	/* border: 1px solid grey; */
 }
 
 .product-img img {
-	max-width: 80%;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	/* border: 1px solid orange; */
 }
 
@@ -128,12 +130,23 @@ article p {
 	/* border: 1px solid black; */
 }
 
+.product-description h3{
+	font-size: 2vh;
+}
+
+.product-description p{
+	font-size: 1.8vh;
+}
+
 article button {
 	width: 50%;
 	height: 12%;
 	border: none;
 	border-radius: 10px;
 	background-color: #f8f4f3;
+	flex-grow: 1;
+	/* border: 1px solid salmon; */
+	margin-bottom: 0.5rem;
 }
 
 article button:hover {
@@ -144,6 +157,7 @@ article button:hover {
 
 .pagination {
     padding: 2rem;
+	flex-grow: 1;
 }
 
 .pagination a {
