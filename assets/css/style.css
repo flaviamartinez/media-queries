@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 
 .grid-container{
@@ -20,11 +20,11 @@
 
 nav {
 	grid-area: nav;
-	background-color: #fff;
+	background-color: #006750;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #ce9288;
+	color: #fff;
 	padding: 2rem;
 }
 
@@ -45,24 +45,25 @@ h1 {
 
 .sorting {
 	grid-area: sorting;
-	background-color: #f4eae9;
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 0.5rem;
 	padding: 0.5rem 2rem;
-	color: #264143;
+	color: #002d24;
 }
 
 select {
-	border: none;
+	border: 1px solid #002d24;
 	border-radius: 5px;
+	color: #002d24;
 }
 
 main {
 	grid-area: main;
-	background-color: #eddcd9;
+	background-color: #e2edc9;
 	display: flex;
 	flex-direction: column;
 	max-height: 100%;
@@ -143,7 +144,7 @@ article button {
 	height: 12%;
 	border: none;
 	border-radius: 10px;
-	background-color: #f8f4f3;
+	background-color: #e2edc9;
 	flex-grow: 1;
 	/* border: 1px solid salmon; */
 	margin-bottom: 0.5rem;
@@ -151,7 +152,7 @@ article button {
 }
 
 article button:hover {
-	background-color: #B2456E;
+	background-color: #2f9b77;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -188,8 +189,8 @@ article button:hover {
 
 footer {
 	grid-area: footer;
-	background-color: #264143;
-	color: #f2ebe9;
+	background-color: #353c4e;
+	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -211,11 +212,11 @@ footer {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background-color: #eddcd9;
+	background-color: #fff;
 }
 
 .social-icons i:hover {
-	background-color: #B2456E;
+	background-color: #2f9b77;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -232,11 +233,9 @@ footer {
 	
 	nav {
 		grid-area: nav;
-		background-color: #fff;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		color: #ce9288;
 		padding: 2rem;
 	}
 	
@@ -267,7 +266,6 @@ footer {
 	}
 
 	select {
-		border: none;
 		border-radius: 5px;
 		width: 80%;
 	}
@@ -296,14 +294,10 @@ footer {
 	}
 
 	nav {
-		grid-area: nav;
-		background-color: #fff;
-		display: flex;
 		flex-direction: column;
 		justify-content: start;
 		align-items: center;
-		color: #ce9288;
-		padding: 2rem;
+		padding: 2rem 1rem;
 		gap: 1.5rem;
 		text-align: center;
 	}
@@ -319,7 +313,6 @@ footer {
 	}
 
 	select {
-		border: none;
 		border-radius: 5px;
 		width: 80%;
 		height: 50%;
